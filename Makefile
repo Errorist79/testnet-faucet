@@ -1,4 +1,5 @@
 all: backend frontend
+	mkdir bin
 	cp backend/faucet bin/
 	cp frontend/.env bin/
 	cp frontend/.env.local bin/
