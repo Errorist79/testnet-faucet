@@ -1,7 +1,3 @@
-evmos-faucet.testnet.run {
-    gzip
-    proxy / localhost:8080 {
-        transparent
-    }
-    ratelimit * /claim 1 1 day
-}
+evmos-faucet.testnet.run
+
+reverse_proxy 127.0.0.1:8080
